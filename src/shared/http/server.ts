@@ -5,12 +5,14 @@ import { Request, Response } from 'express';
 import express = require('express');
 import cors = require('cors');
 import AppError from "@shared/errors/AppError";
+import routes from "./routes";
 
 const PORT = 8000;
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(routes);
 
 
 
@@ -38,6 +40,6 @@ app.get('/', (req: Request, res: Response) => {
 
 
 app.listen(PORT, () => {
-    console.log('[ Server ] Running at localhost:8000');
+    console.log('[ Server ] Running at localhost:8000 [ Server ]' );
 });
 
