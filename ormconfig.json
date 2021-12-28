@@ -2,7 +2,7 @@
    "type": "mysql",
    "host": "localhost",
    "port": 3306,
-   "username": "MainUser",
+   "username": "root",
    "password": "alberto123",
    "database": "Bank",
    "synchronize": true,
