@@ -1,4 +1,5 @@
 import "reflect-metadata";
+// import  '@shared/typeorm'
 
 import { Request, Response } from 'express';
 import express = require('express');
